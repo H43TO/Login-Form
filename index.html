@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    
+    <title>Login</title>
+</head>
+<body class="login-body">
+
+    <nav class="nav-bar">
+        <input type="button" class="navigation" id="contrast-mode" onclick="changeContrast()">
+        <script src="navigation.js"></script>
+    </nav>
+
+    <main class="login-main">
+
+        <form class="login-form" id="login-form">
+            <script src="navigation.js"></script>
+    
+            <span class="login-span">Log in</span>
+
+            <div class="login-error">
+                <span id="error">Sorry. That login might be incorrect</span>
+            </div>
+
+            <div class="login-credentials" id="user-div">
+                <span class="input" id="l-text">Username:</span>
+                <input type="text" class="input" id="user">
+            </div>
+
+            <div class="login-credentials" id="pass-div">
+                <span class="input" id="l-text">Password:</span>
+                <input type="password" class="input" id="pass">
+            </div>
+            
+            <div class="login-credentials" id="button">
+                <button type="button" class="input" id="animated" onclick="showError(); document.getElementById('user').value = ''; document.getElementById('pass').value = ''">Log In</button>
+                <script src="error.js"></script>
+        </form>
+    </main>
+</body>
+</html>
